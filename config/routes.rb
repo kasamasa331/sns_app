@@ -9,8 +9,7 @@ Rails.application.routes.draw do
   
   # TopicsController
   get 'topics/new', to: 'topics#new', as: 'new_Action'
-  get 'topics/edit', to: 'topics#edit', as: 'new_Action'
+  get 'topics/edit', to: 'topics#edit', as: 'edit_Action'
   
-
 end
 
