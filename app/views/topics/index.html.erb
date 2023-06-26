@@ -7,7 +7,7 @@
 
 <div class="post-list">
   <% @posts.each do |post| %>
-    <div class="post">
+     <a class="post" href="<%= edit_topic_path(post) %>">
       <div class="header">
         <h2 class="title"><%= post.title %></h2>
         <p class="timestamp"><%= post.created_at.strftime("%B %d, %Y") %></p>
@@ -15,6 +15,6 @@
       <div class="body">
         <p class="content"><%= post.body %></p>
       </div>
-    </div>
+    </a>
   <% end %>
 </div>
