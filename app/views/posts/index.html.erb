@@ -7,7 +7,8 @@
 
 <div class="post-list">
   <% @posts.each do |post| %>
-    <a class="post" href="<%= edit_post_path(post) %>">
+    <!-- 以下の行の edit_post_path を show_post_path に変更します -->
+    <a class="post" href="<%= show_post_path(post) %>">
       <div class="header">
         <h2 class="title"><%= post.title %></h2>
         <p class="timestamp"><%= post.created_at.strftime("%B %d, %Y") %></p>
